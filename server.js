@@ -8,6 +8,22 @@ const server = Hapi.server({
   host: 'localhost'
 });
 
+server.route({
+  method: 'GET',
+  path: '/',
+  handler: (req, h) => {
+    return 'Hello, WORLD!';
+  }
+});
+
+server.route({
+  method: 'GET',
+  path: '/{name}',
+  handler: (req, h) => {
+    return `Hello, ${encodeURIComponent(req.params.name)}!`;
+  }
+});
+
 const init = async () => {
   await server.start();
   console.log(`Server running at ${server.info.uri}`);
