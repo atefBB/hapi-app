@@ -1,0 +1,19 @@
+{
+  "name": "hapi-app",
+  "version": "0.0.1",
+  "description": "Hapi nodejs framework App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hapi",
+    "app",
+    "nodejs"
+  ],
+  "author": "Atef Ben Ali <atef.bettaib@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^17.8.1"
+  }
+}
